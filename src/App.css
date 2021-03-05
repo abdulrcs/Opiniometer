@@ -1,0 +1,77 @@
+* {
+  margin: 0 auto;
+}
+
+.parent {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #272727;
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+main h3 {
+  margin-top: 24px;
+}
+
+input {
+  margin-top: 24px;
+}
+
+.result {
+  width: 200px;
+  height: 200px;
+  background: whitesmoke;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+
+.bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar p {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  font-size: 20px;
+}
+
+.chartcanvas {
+  width: 500px;
+  height: 500px;
+  margin-top: 3vh;
+}
+/*# sourceMappingURL=App.css.map */

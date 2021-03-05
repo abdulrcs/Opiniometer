@@ -1,0 +1,47 @@
+* {
+  margin: 0 auto;
+}
+.parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(39, 39, 39);
+}
+main {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  h3 {
+    margin-top: 24px;
+  }
+}
+input {
+  margin-top: 24px;
+}
+.result {
+  width: 200px;
+  height: 200px;
+  background: whitesmoke;
+  transform: scaleY(-1);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5px;
+}
+.bar {
+  display: flex;
+  p {
+    transform: scaleY(-1);
+    font-size: 20px;
+  }
+}
+.chartcanvas {
+  width: 500px;
+  height: 500px;
+  margin-top: 3vh;
+}
