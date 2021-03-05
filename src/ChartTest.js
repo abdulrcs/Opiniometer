@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Polar } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 import { Chart } from "chart.js";
 export default function ChartTest({ results }) {
   var color = Chart.helpers.color;
-
+  Chart.defaults.polarArea.color = "red";
   return (
     <div class="chartcanvas">
-      <Polar
+      <Doughnut
         data={{
           labels: [
             "Strongly Positive",
