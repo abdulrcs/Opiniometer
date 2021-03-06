@@ -5,21 +5,42 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 function App() {
+  const [isMounted, setMounted] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setMounted(true), 1500);
+  }, []);
   return (
     <Router>
       <div class="parent">
         <AnimatePresence>
           <Switch>
-            <Route path="/" exact component={Main} />
+            <Route path="/" exact component={isMounted ? Main : Loading} />
             <Route path="/about" component={About} />
           </Switch>
         </AnimatePresence>
-        <Footer />
+        <Footer isMounted={isMounted} />
       </div>
     </Router>
   );
 }
-const Footer = () => {
+
+const Loading = () => {
+  return (
+    <div class="lds-grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
+};
+
+const Footer = (isMounted) => {
   return (
     <footer>
       <Link to="/about">
