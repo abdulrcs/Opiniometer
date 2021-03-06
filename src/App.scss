@@ -1,47 +1,78 @@
 * {
   margin: 0 auto;
 }
+
+$mainbg: #0f0e17;
+$fontgradient: linear-gradient(95deg, #fdc830, #f37335);
+$gray: #909090;
+
 .parent {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: rgb(39, 39, 39);
+  justify-content: center;
+  background-color: $mainbg;
 }
-main {
-  width: 500px;
-  height: 500px;
+
+h1 {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 48px;
+  background: $fontgradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: "Ubuntu";
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.section1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  h3 {
-    margin-top: 24px;
-  }
-}
-input {
-  margin-top: 24px;
-}
-.result {
-  width: 200px;
-  height: 200px;
-  background: whitesmoke;
-  transform: scaleY(-1);
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 5px;
-}
-.bar {
-  display: flex;
+  margin-top: -30%;
   p {
-    transform: scaleY(-1);
-    font-size: 20px;
+    margin-top: 20px;
+  }
+  .form {
+    width: 300px;
+    height: 50px;
+    border-radius: 32px;
+    background: white;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: flex-start;
+
+    input[type="text"] {
+      width: 200px;
+      height: 20px;
+      outline: none;
+      border: 0px;
+      font-size: 20px;
+      font-family: "Ubuntu";
+    }
   }
 }
-.chartcanvas {
-  width: 500px;
-  height: 500px;
-  margin-top: 3vh;
+
+footer {
+  position: absolute;
+  bottom: 18px;
+  font-size: 20px;
+  .detail {
+    font-weight: 200;
+    color: $gray;
+  }
+  .name {
+    margin-left: -10%;
+    margin-top: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
 }
