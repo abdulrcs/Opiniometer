@@ -34,6 +34,10 @@ p {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,6 +80,7 @@ p {
 }
 
 footer {
+  width: 130px;
   position: absolute;
   bottom: 18px;
   font-size: 20px;
@@ -87,7 +92,6 @@ footer .detail {
 }
 
 footer .name {
-  margin-left: -10%;
   margin-top: 20px;
   font-weight: 500;
   display: -webkit-box;
