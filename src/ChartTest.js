@@ -18,7 +18,10 @@ export default function ChartTest({ result }) {
   }
 
   const NewDoughnut = withChartSizeControl(Doughnut);
-  return eval(result.join("+")) > 0 ? (
+  function sum(arr) {
+    return arr.reduce((a, b) => a + b);
+  }
+  return sum(result) > 0 ? (
     <NewDoughnut
       data={{
         labels: [

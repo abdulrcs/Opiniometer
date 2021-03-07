@@ -39,34 +39,45 @@ function Main({ result, setData, check, setCheck }) {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: "30%" }}
-      animate={{ opacity: 1, y: "0" }}
-      exit={{ opacity: 0, y: "30%" }}
-    >
-      <main>
-        <div class="section1">
-          <h1>Opiniometer</h1>
-          <p>
-            Analyze an opinion on specific
-            <br />
-            topic based on twitter posts!
-          </p>
-          <form class="form" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="Insert a Topic"
-              value={query}
-              onChange={handleChange}
-            ></input>
-            <Link to="/result">
-              <img src="submit.svg" onClick={handleSubmit} alt="Submit" />
-            </Link>
-          </form>
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: "30%" }}
+        animate={{ opacity: 1, y: "0" }}
+        exit={{ opacity: 0, y: "30%" }}
+      >
+        <main>
+          <div class="section1">
+            <h1>Opiniometer</h1>
+            <p>
+              Analyze an opinion on specific
+              <br />
+              topic based on twitter posts!
+            </p>
+            <form class="form" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Insert a Topic"
+                value={query}
+                onChange={handleChange}
+              ></input>
+              <Link to="/result">
+                <img src="submit.svg" onClick={handleSubmit} alt="Submit" />
+              </Link>
+            </form>
+          </div>
+          {/* <ChartTest results={result} /> */}
+        </main>
+      </motion.div>
+      <footer>
+        <Link to="/about">
+          <p class="detail">How it Works?</p>
+        </Link>
+        <div class="name">
+          <img src="github.svg" />
+          <p>abdulrcs</p>
         </div>
-        {/* <ChartTest results={result} /> */}
-      </main>
-    </motion.div>
+      </footer>
+    </>
   );
 }
 

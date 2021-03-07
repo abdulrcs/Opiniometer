@@ -45,7 +45,6 @@ function App() {
             />
           </Switch>
         </AnimatePresence>
-        <Footer />
       </div>
     </Router>
   );

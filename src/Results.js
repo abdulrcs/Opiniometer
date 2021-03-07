@@ -24,7 +24,10 @@ function Results({ result, check }) {
         >
           <div class="resultheader">
             <h1>Opiniometer</h1>
-            <p>{check && `Here's what the people think about ${check}:`}</p>
+            <p>
+              Here's what the people think about <br />
+              {check.length > 25 ? "that topic" : check}:
+            </p>
           </div>
           <ChartTest result={result} />
           <Link to="/">
@@ -36,6 +39,15 @@ function Results({ result, check }) {
       ) : (
         <Loading />
       )}
+      <footer>
+        <Link to="/about">
+          <p class="detail">How it Works?</p>
+        </Link>
+        <div class="name">
+          <img src="github.svg" />
+          <p>abdulrcs</p>
+        </div>
+      </footer>
     </>
   );
 }
