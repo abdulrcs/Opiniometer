@@ -1,0 +1,145 @@
+* {
+  margin: 0 auto;
+}
+
+$mainbg: #0f0e17;
+$fontgradient: linear-gradient(95deg, #fdc830, #f37335);
+$gray: #909090;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent {
+  width: 100vw;
+  min-height: 100vh;
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $mainbg;
+  position: relative;
+}
+html {
+  height: -webkit-fill-available;
+}
+h1 {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 48px;
+  background: $fontgradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: "Ubuntu";
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: -30%;
+  p {
+    margin-top: 20px;
+  }
+  .form {
+    width: 300px;
+    height: 50px;
+    border-radius: 32px;
+    background: white;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: flex-start;
+
+    input[type="text"] {
+      width: 200px;
+      height: 20px;
+      outline: none;
+      border: 0px;
+      font-size: 20px;
+      font-family: "Ubuntu";
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
+}
+.submitsvg {
+  width: 20;
+  height: 21;
+}
+footer {
+  width: 130px;
+  position: absolute;
+  bottom: 10px;
+  font-size: 20px;
+  .detail {
+    font-weight: 200;
+    color: $gray;
+  }
+  .name {
+    margin-top: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about {
+  margin-top: -20%;
+  h1 {
+    margin: 0 0 0 30px;
+    text-align: left;
+    font-size: 44px;
+  }
+  p {
+    margin: 30px 30px 0 30px;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+  }
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  margin: 0px 15px 0px 15px;
+  text-align: center;
+  margin-top: -15%;
+  justify-content: center;
+}
+.resultheader {
+  white-space: pre-line;
+
+  p {
+    margin: 20px 0px 10px 0px;
+  }
+}
+.back {
+  @include flex-center;
+  width: 310px;
+  height: 50px;
+  background-color: #f48134;
+  border-radius: 8px;
+  margin: 10% 0px 10px 0px;
+}
+.notenough {
+  @include flex-center;
+  width: 80vw;
+  height: 50vh;
+  h2 {
+    font-family: "Inter";
+    color: white;
+  }
+}

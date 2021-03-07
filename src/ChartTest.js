@@ -1,42 +1,60 @@
 import React, { useState, useEffect } from "react";
 import { Doughnut } from "react-chartjs-2";
 import { Chart } from "chart.js";
-export default function ChartTest({ results }) {
-  var color = Chart.helpers.color;
-  Chart.defaults.polarArea.color = "red";
-  return (
-    <div class="chartcanvas">
-      <Doughnut
-        data={{
-          labels: [
-            "Strongly Positive",
-            "Positive",
-            "Weakly Positive",
-            "Strongly Negative",
-            "Negative",
-            "Weakly Negative",
-            "Neutral",
-          ],
-          datasets: [
-            {
-              data: results,
-              backgroundColor: [
-                color("forestgreen").alpha(0.5).rgbString(),
-                color("limegreen").alpha(0.5).rgbString(),
-                color("lightgreen").alpha(0.5).rgbString(),
-                color("indianred").alpha(0.5).rgbString(),
-                color("lightcoral").alpha(0.5).rgbString(),
-                color("lightpink").alpha(0.5).rgbString(),
-                color("lightgray").alpha(0.5).rgbString(),
-              ],
-            },
-          ],
+export default function ChartTest({ result }) {
+  function withChartSizeControl(Component) {
+    return (props) => (
+      <div
+        className="chart"
+        style={{
+          position: "relative",
+          height: props.height + "vh",
+          width: props.width + "vw",
         }}
-        options={{
-          responsive: true,
-          legend: { display: false },
-        }}
-      />
+      >
+        <Component {...props} />
+      </div>
+    );
+  }
+
+  const NewDoughnut = withChartSizeControl(Doughnut);
+  return eval(result.join("+")) > 0 ? (
+    <NewDoughnut
+      data={{
+        labels: [
+          "Strongly Positive",
+          "Positive",
+          "Weakly Positive",
+          "Strongly Negative",
+          "Negative",
+          "Weakly Negative",
+          "Neutral",
+        ],
+        datasets: [
+          {
+            data: result,
+            backgroundColor: [
+              "forestgreen",
+              "limegreen",
+              "lightgreen",
+              "indianred",
+              "lightcoral",
+              "lightpink",
+              "#707072",
+            ],
+          },
+        ],
+      }}
+      width={80}
+      height={50}
+      options={{
+        legend: { display: false },
+        maintainAspectRatio: false,
+      }}
+    />
+  ) : (
+    <div class="notenough">
+      <h2>Not enough tweets &#128557;</h2>
     </div>
   );
 }
