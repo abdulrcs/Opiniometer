@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Opiniometer/static/css/main.73dbc6e1.chunk.css",
+    "main.js": "/Opiniometer/static/js/main.868e96de.chunk.js",
+    "main.js.map": "/Opiniometer/static/js/main.868e96de.chunk.js.map",
+    "runtime-main.js": "/Opiniometer/static/js/runtime-main.26dabad7.js",
+    "runtime-main.js.map": "/Opiniometer/static/js/runtime-main.26dabad7.js.map",
+    "static/js/2.bd0c2e22.chunk.js": "/Opiniometer/static/js/2.bd0c2e22.chunk.js",
+    "static/js/2.bd0c2e22.chunk.js.map": "/Opiniometer/static/js/2.bd0c2e22.chunk.js.map",
+    "index.html": "/Opiniometer/index.html",
+    "static/css/main.73dbc6e1.chunk.css.map": "/Opiniometer/static/css/main.73dbc6e1.chunk.css.map",
+    "static/js/2.bd0c2e22.chunk.js.LICENSE.txt": "/Opiniometer/static/js/2.bd0c2e22.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26dabad7.js",
+    "static/js/2.bd0c2e22.chunk.js",
+    "static/css/main.73dbc6e1.chunk.css",
+    "static/js/main.868e96de.chunk.js"
+  ]
+}
