@@ -134,6 +134,11 @@ footer .name {
   text-align: justify;
 }
 
+.about p a {
+  color: #f48134;
+  font-weight: 500;
+}
+
 .result {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +303,7 @@ footer .name {
     margin: 1.875rem 3.125rem 0 3.125rem;
     font-size: 1.875rem;
     font-weight: 200;
-    text-align: justify;
+    text-align: left;
   }
 }
 
@@ -317,7 +322,7 @@ footer .name {
     font-size: 1.25rem;
   }
   .section1 {
-    margin-top: -15%;
+    margin-top: -20%;
   }
   .section1 p {
     margin-top: 1.5625rem;
@@ -393,18 +398,19 @@ footer .name {
     margin: 2rem 0rem 0.625rem 0rem;
   }
   .about {
-    margin-top: -10%;
+    margin-top: -8%;
   }
   .about h1 {
-    margin: 0 15.625rem 0 15.625rem;
+    margin: 0 250px 0 250px;
     text-align: center;
     font-size: 5rem;
   }
   .about p {
-    margin: 3.75rem 15.625rem 0 15.625rem;
+    width: 600px;
+    margin: 48px 400px 0 400px;
     font-size: 1.5rem;
     font-weight: 200;
-    text-align: justify;
+    text-align: left;
   }
 }
 

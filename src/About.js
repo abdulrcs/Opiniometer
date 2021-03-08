@@ -15,9 +15,15 @@ function About() {
       >
         <h1>How it Works?</h1>
         <p>
-          Molestiae delectus expedita et esse expedita. Autem sunt iure et
-          nostrum natus iste consequatur. Debitis autem rerum et ex ut culpa
-          placeat cupiditate dolorum. Nulla vero dolores.
+          It is possible using Natural Language Processing (NLP) concept called
+          <a
+            href="https://en.wikipedia.org/wiki/Sentiment_analysis"
+            target="_blank"
+          >
+            &nbsp;Sentiment Analysis&nbsp;
+          </a>
+          that can determine if a chunk of text is positive, negative, or
+          neutral based on its polarity.
         </p>
       </motion.div>
       <footer>
