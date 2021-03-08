@@ -49,9 +49,14 @@ function Main({ result, setData, check, setCheck }) {
           <div class="section1">
             <h1>Opiniometer</h1>
             <p>
-              Analyze an opinion on specific
-              <br />
-              topic based on twitter posts!
+              <span class="mobileText">
+                Analyze an opinion on specific <br /> topic based on twitter
+                posts!
+              </span>
+              <span class="desktopText">
+                Analyze an opinion on specific topic <br /> based on twitter
+                posts!
+              </span>
             </p>
             <form class="form" onSubmit={handleSubmit}>
               <input

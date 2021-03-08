@@ -19,7 +19,7 @@ export default function ChartTest({ result }) {
 
   const NewDoughnut = withChartSizeControl(Doughnut);
   function sum(arr) {
-    return arr.reduce((a, b) => a + b);
+    return arr.reduce((a, b) => a + b, 0);
   }
   return sum(result) > 0 ? (
     <NewDoughnut
@@ -45,6 +45,8 @@ export default function ChartTest({ result }) {
               "lightpink",
               "#707072",
             ],
+            borderColor: "white",
+            borderWidth: 4,
           },
         ],
       }}

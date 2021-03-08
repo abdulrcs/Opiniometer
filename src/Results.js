@@ -40,9 +40,6 @@ function Results({ result, check }) {
         <Loading />
       )}
       <footer>
-        <Link to="/about">
-          <p class="detail">How it Works?</p>
-        </Link>
         <div class="name">
           <img src="github.svg" />
           <p>abdulrcs</p>

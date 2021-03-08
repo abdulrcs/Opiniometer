@@ -2,60 +2,60 @@ $fontgradient: linear-gradient(95deg, #fdc830, #f37335);
 .lds-grid {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 160px;
+  width: 5rem;
+  height: 10rem;
 }
 .lds-grid div {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background: $fontgradient;
   animation: lds-grid 1.2s linear infinite;
 }
 .lds-grid div:nth-child(1) {
-  top: 8px;
-  left: 8px;
+  top: 0.5rem;
+  left: 0.5rem;
   animation-delay: 0s;
 }
 .lds-grid div:nth-child(2) {
-  top: 8px;
-  left: 32px;
+  top: 0.5rem;
+  left: 2rem;
   animation-delay: -0.4s;
 }
 .lds-grid div:nth-child(3) {
-  top: 8px;
-  left: 56px;
+  top: 0.5rem;
+  left: 3.5rem;
   animation-delay: -0.8s;
 }
 .lds-grid div:nth-child(4) {
-  top: 32px;
-  left: 8px;
+  top: 2rem;
+  left: 0.5rem;
   animation-delay: -0.4s;
 }
 .lds-grid div:nth-child(5) {
-  top: 32px;
-  left: 32px;
+  top: 2rem;
+  left: 2rem;
   animation-delay: -0.8s;
 }
 .lds-grid div:nth-child(6) {
-  top: 32px;
-  left: 56px;
+  top: 2rem;
+  left: 3.5rem;
   animation-delay: -1.2s;
 }
 .lds-grid div:nth-child(7) {
-  top: 56px;
-  left: 8px;
+  top: 3.5rem;
+  left: 0.5rem;
   animation-delay: -0.8s;
 }
 .lds-grid div:nth-child(8) {
-  top: 56px;
-  left: 32px;
+  top: 3.5rem;
+  left: 2rem;
   animation-delay: -1.2s;
 }
 .lds-grid div:nth-child(9) {
-  top: 56px;
-  left: 56px;
+  top: 3.5rem;
+  left: 3.5rem;
   animation-delay: -1.6s;
 }
 @keyframes lds-grid {
