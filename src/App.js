@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/">
       <div class="parent">
         <AnimatePresence>
           <Switch>
