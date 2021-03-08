@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
 import { Doughnut } from "react-chartjs-2";
-import { Chart } from "chart.js";
+
 export default function ChartResult({ result }) {
+  let polarities = [0, 0, 0, 0, 0, 0, 0];
+  if (result["polarity"] != null)
+    polarities = Object.entries(result["polarity"]).map((e) => e[1]);
   function withChartSizeControl(Component) {
     return (props) => (
       <div
@@ -18,10 +20,12 @@ export default function ChartResult({ result }) {
   }
 
   const NewDoughnut = withChartSizeControl(Doughnut);
+
   function sum(arr) {
     return arr.reduce((a, b) => a + b, 0);
   }
-  return sum(result) > 0 ? (
+
+  return sum(polarities) > 0 ? (
     <NewDoughnut
       data={{
         labels: [
@@ -35,7 +39,7 @@ export default function ChartResult({ result }) {
         ],
         datasets: [
           {
-            data: result,
+            data: polarities,
             backgroundColor: [
               "forestgreen",
               "limegreen",

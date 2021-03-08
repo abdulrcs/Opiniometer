@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./App.css";
 import { motion } from "framer-motion";
 import ChartResult from "./ChartResult";
 import Loading from "./Loading";
+import "./styles/App.css";
+
 function Results({ result, check }) {
   const [showChart, setShowChart] = useState(false);
 
@@ -26,7 +27,7 @@ function Results({ result, check }) {
             <h1>Opiniometer</h1>
             <p>
               Here's what the people think about <br />
-              {check.length > 25 ? "that topic" : check}:
+              {check.length > 25 ? "that topic" : check}
             </p>
           </div>
           <ChartResult result={result} />
@@ -41,7 +42,7 @@ function Results({ result, check }) {
       )}
       <footer>
         <div class="name">
-          <img src="github.svg" />
+          <img src="./assets/github.svg" />
           <p>abdulrcs</p>
         </div>
       </footer>

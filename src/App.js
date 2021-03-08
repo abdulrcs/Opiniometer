@@ -1,16 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Main from "./Main";
 import About from "./About";
 import Results from "./Results";
-import Footer from "./Footer";
 import Loading from "./Loading";
-import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import "./styles/App.css";
 
 function App() {
   const [isMounted, setMounted] = useState(false);
-  const [result, setData] = useState([]);
+  const [result, setData] = useState({});
   const [check, setCheck] = useState("");
 
   useEffect(() => {

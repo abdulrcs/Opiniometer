@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./App.css";
 import { motion } from "framer-motion";
-import Footer from "./Footer";
+import "./styles/App.css";
 
 function About() {
   return (
@@ -33,7 +32,7 @@ function About() {
           </div>
         </Link>
         <div class="name">
-          <img src="github.svg" />
+          <img src="assets/github.svg" />
           <p>abdulrcs</p>
         </div>
       </footer>

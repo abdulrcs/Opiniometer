@@ -1,9 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
-import "./App.css";
-import ChartResult from "./ChartResult";
+import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
-import Footer from "./Footer";
+import "./styles/App.css";
 
 function Main({ result, setData, check, setCheck }) {
   const [query, setQuery] = useState("");
@@ -18,7 +16,7 @@ function Main({ result, setData, check, setCheck }) {
       const res = await fetch("https://analysis.abdulrcs.repl.co/api/" + query);
       const resText = await res.text();
       const json = await JSON.parse(resText);
-      await setData(Object.entries(json).map((e) => e[1]));
+      await setData(json);
     } else {
       alert("Type your query before submitting!");
     }
@@ -66,19 +64,23 @@ function Main({ result, setData, check, setCheck }) {
                 onChange={handleChange}
               ></input>
               <Link to="/result">
-                <img src="submit.svg" onClick={handleSubmit} alt="Submit" />
+                <img
+                  src="./assets/submit.svg"
+                  onClick={handleSubmit}
+                  alt="Submit"
+                />
               </Link>
             </form>
           </div>
-          {/* <ChartResult results={result} /> */}
         </main>
       </motion.div>
+
       <footer>
         <Link to="/about">
           <p class="detail">How it Works?</p>
         </Link>
         <div class="name">
-          <img src="github.svg" />
+          <img src="./assets/github.svg" />
           <p>abdulrcs</p>
         </div>
       </footer>
