@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 import { motion } from "framer-motion";
-import ChartTest from "./ChartTest";
+import ChartResult from "./ChartResult";
 import Loading from "./Loading";
 function Results({ result, check }) {
   const [showChart, setShowChart] = useState(false);
@@ -29,7 +29,7 @@ function Results({ result, check }) {
               {check.length > 25 ? "that topic" : check}:
             </p>
           </div>
-          <ChartTest result={result} />
+          <ChartResult result={result} />
           <Link to="/">
             <div class="back">
               <p>Try Another Topic</p>

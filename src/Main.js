@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
-import ChartTest from "./ChartTest";
+import ChartResult from "./ChartResult";
 import { Link, useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
 import Footer from "./Footer";
@@ -25,7 +25,7 @@ function Main({ result, setData, check, setCheck }) {
   };
 
   const upperWord = (word) => {
-    let splitted = word.split(" ");
+    let splitted = word.trim().split(" ");
     let upperCase = splitted.map((e) => e[0].toUpperCase() + e.substring(1));
     return upperCase.join(" ");
   };
@@ -70,7 +70,7 @@ function Main({ result, setData, check, setCheck }) {
               </Link>
             </form>
           </div>
-          {/* <ChartTest results={result} /> */}
+          {/* <ChartResult results={result} /> */}
         </main>
       </motion.div>
       <footer>

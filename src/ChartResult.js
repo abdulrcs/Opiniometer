@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Doughnut } from "react-chartjs-2";
 import { Chart } from "chart.js";
-export default function ChartTest({ result }) {
+export default function ChartResult({ result }) {
   function withChartSizeControl(Component) {
     return (props) => (
       <div
