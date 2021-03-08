@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Opiniometer/static/css/main.73dbc6e1.chunk.css",
-    "main.js": "/Opiniometer/static/js/main.20e796d7.chunk.js",
-    "main.js.map": "/Opiniometer/static/js/main.20e796d7.chunk.js.map",
+    "main.js": "/Opiniometer/static/js/main.edc77dbe.chunk.js",
+    "main.js.map": "/Opiniometer/static/js/main.edc77dbe.chunk.js.map",
     "runtime-main.js": "/Opiniometer/static/js/runtime-main.26dabad7.js",
     "runtime-main.js.map": "/Opiniometer/static/js/runtime-main.26dabad7.js.map",
     "static/js/2.3f690359.chunk.js": "/Opiniometer/static/js/2.3f690359.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.26dabad7.js",
     "static/js/2.3f690359.chunk.js",
     "static/css/main.73dbc6e1.chunk.css",
-    "static/js/main.20e796d7.chunk.js"
+    "static/js/main.edc77dbe.chunk.js"
   ]
 }
