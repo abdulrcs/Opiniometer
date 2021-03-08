@@ -3,7 +3,7 @@ import Main from "./Main";
 import About from "./About";
 import Results from "./Results";
 import Loading from "./Loading";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import "./styles/App.css";
 
@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div class="parent">
         <AnimatePresence>
           <Switch>
