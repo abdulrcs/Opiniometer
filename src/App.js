@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div class="parent">
         <AnimatePresence>
           <Switch>

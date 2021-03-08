@@ -12,7 +12,7 @@ function Main({ result, setData, check, setCheck }) {
   };
 
   const callApi = async () => {
-    if (query.length > 1) {
+    if (query.length >= 1) {
       const res = await fetch("https://analysis.abdulrcs.repl.co/api/" + query);
       const resText = await res.text();
       const json = await JSON.parse(resText);
@@ -29,7 +29,7 @@ function Main({ result, setData, check, setCheck }) {
   };
 
   const handleSubmit = (e) => {
-    setCheck(upperWord(query));
+    if (query !== undefined) setCheck(upperWord(query));
     callApi();
     console.log(result);
     e.preventDefault();
