@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Opiniometer/static/css/main.73dbc6e1.chunk.css",
-    "main.js": "/Opiniometer/static/js/main.8212d5f8.chunk.js",
-    "main.js.map": "/Opiniometer/static/js/main.8212d5f8.chunk.js.map",
+    "main.js": "/Opiniometer/static/js/main.7cbd3aab.chunk.js",
+    "main.js.map": "/Opiniometer/static/js/main.7cbd3aab.chunk.js.map",
     "runtime-main.js": "/Opiniometer/static/js/runtime-main.26dabad7.js",
     "runtime-main.js.map": "/Opiniometer/static/js/runtime-main.26dabad7.js.map",
-    "static/js/2.3f690359.chunk.js": "/Opiniometer/static/js/2.3f690359.chunk.js",
-    "static/js/2.3f690359.chunk.js.map": "/Opiniometer/static/js/2.3f690359.chunk.js.map",
+    "static/js/2.90b4ac0c.chunk.js": "/Opiniometer/static/js/2.90b4ac0c.chunk.js",
+    "static/js/2.90b4ac0c.chunk.js.map": "/Opiniometer/static/js/2.90b4ac0c.chunk.js.map",
     "index.html": "/Opiniometer/index.html",
     "static/css/main.73dbc6e1.chunk.css.map": "/Opiniometer/static/css/main.73dbc6e1.chunk.css.map",
-    "static/js/2.3f690359.chunk.js.LICENSE.txt": "/Opiniometer/static/js/2.3f690359.chunk.js.LICENSE.txt"
+    "static/js/2.90b4ac0c.chunk.js.LICENSE.txt": "/Opiniometer/static/js/2.90b4ac0c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.26dabad7.js",
-    "static/js/2.3f690359.chunk.js",
+    "static/js/2.90b4ac0c.chunk.js",
     "static/css/main.73dbc6e1.chunk.css",
-    "static/js/main.8212d5f8.chunk.js"
+    "static/js/main.7cbd3aab.chunk.js"
   ]
 }
