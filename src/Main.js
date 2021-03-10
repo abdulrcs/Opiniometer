@@ -3,23 +3,12 @@ import { Link, useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./styles/App.css";
 
-function Main({ result, setData, check, setCheck }) {
+function Main({ setCheck }) {
   const [query, setQuery] = useState("");
   const history = useHistory();
 
   const handleChange = (e) => {
     setQuery(e.target.value);
-  };
-
-  const callApi = async () => {
-    if (query.length >= 1) {
-      const res = await fetch("https://analysis.abdulrcs.repl.co/api/" + query);
-      const resText = await res.text();
-      const json = await JSON.parse(resText);
-      await setData(json);
-    } else {
-      alert("Type your query before submitting!");
-    }
   };
 
   const upperWord = (word) => {
@@ -30,8 +19,6 @@ function Main({ result, setData, check, setCheck }) {
 
   const handleSubmit = (e) => {
     if (query !== undefined) setCheck(upperWord(query));
-    callApi();
-    console.log(result);
     e.preventDefault();
     history.push("/result");
   };

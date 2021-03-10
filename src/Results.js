@@ -5,14 +5,21 @@ import ChartResult from "./ChartResult";
 import Loading from "./Loading";
 import "./styles/App.css";
 
-function Results({ result, check }) {
+function Results({ check }) {
   const [showChart, setShowChart] = useState(false);
+  const [result, setResult] = useState({});
 
   useEffect(() => {
-    setTimeout(() => {
-      setShowChart(true);
-    }, 1500);
-  }, []);
+    const callApi = async () => {
+      const res = await fetch("https://analysis.abdulrcs.repl.co/api/" + check);
+      const resText = await res.text();
+      const json = await JSON.parse(resText);
+      await setResult(json);
+      await setShowChart(true);
+    };
+
+    callApi();
+  }, [check]);
 
   return (
     <>

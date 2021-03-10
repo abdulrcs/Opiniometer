@@ -4,12 +4,11 @@ import About from "./About";
 import Results from "./Results";
 import Loading from "./Loading";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import "./styles/App.css";
 
 function App() {
   const [isMounted, setMounted] = useState(false);
-  const [result, setData] = useState({});
   const [check, setCheck] = useState("");
 
   useEffect(() => {
@@ -25,23 +24,11 @@ function App() {
               path="/"
               exact
               component={
-                isMounted
-                  ? () => (
-                      <Main
-                        result={result}
-                        setData={setData}
-                        check={check}
-                        setCheck={setCheck}
-                      />
-                    )
-                  : Loading
+                isMounted ? () => <Main setCheck={setCheck} /> : Loading
               }
             />
             <Route path="/about" component={About} />
-            <Route
-              path="/result"
-              component={() => <Results result={result} check={check} />}
-            />
+            <Route path="/result" component={() => <Results check={check} />} />
           </Switch>
         </AnimatePresence>
       </div>
