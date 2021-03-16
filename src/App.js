@@ -3,6 +3,7 @@ import Main from "./Main";
 import About from "./About";
 import Results from "./Results";
 import Loading from "./Loading";
+import Tweets from "./Tweets";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import "./styles/App.css";
@@ -29,6 +30,7 @@ function App() {
             />
             <Route path="/about" component={About} />
             <Route path="/result" component={() => <Results check={check} />} />
+            <Route path="/tweets" component={Tweets} />
           </Switch>
         </AnimatePresence>
       </div>

@@ -513,4 +513,90 @@ footer .name {
     opacity: 0.5;
   }
 }
+
+.parent {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scrollable {
+  width: 48vw;
+  height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.tweetpic img {
+  width: 48px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.tweetbox {
+  margin-top: 20px;
+  font-family: "Open Sans";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #15202b;
+  width: 45vw;
+  height: auto;
+  color: white;
+}
+
+.tweetcontent {
+  width: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5px;
+  margin-right: 40px;
+}
+
+.tweethead {
+  margin: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tweethead p {
+  font-family: "Open Sans";
+}
+
+.tweetname {
+  margin: initial;
+  font-weight: 700;
+}
+
+.tweetid {
+  color: gray;
+  margin-left: 10px;
+}
+
+.tweetpic {
+  margin: 10px;
+}
+
+.tweetScore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+
+.tweetScore p {
+  text-align: center;
+  font-family: "Open Sans";
+}
 /*# sourceMappingURL=App.css.map */

@@ -43,6 +43,16 @@ function Results({ check }) {
               <p>Try Another Topic</p>
             </div>
           </Link>
+          <Link
+            to={{
+              pathname: `/tweets`,
+              state: { result },
+            }}
+          >
+            <div class="back">
+              <p>Tweets</p>
+            </div>
+          </Link>
         </motion.div>
       ) : (
         <Loading />
