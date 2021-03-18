@@ -63,7 +63,7 @@ a {
     justify-content: flex-start;
 
     input[type="text"] {
-      width: 12.5rem;
+      width: 10.5rem;
       height: 1.25rem;
       outline: none;
       border: 0rem;
@@ -132,13 +132,20 @@ footer {
     margin: 1.25rem 0rem 0.625rem 0rem;
   }
 }
+.chart {
+  padding-bottom: 0.625rem;
+}
+.tweetButton {
+  background-color: #1da1f2 !important;
+}
 .back {
+  font-family: "Inter";
   @include flex-center;
-  width: 19.375rem;
-  height: 3.125rem;
+  width: 15.625rem;
+  height: 2.8125rem;
   background-color: $button;
   border-radius: 0.5rem;
-  margin: 8% 0rem 0.625rem 0rem;
+  margin: 0% 0rem 0.625rem 0rem;
 }
 .notenough {
   @include flex-center;
@@ -152,8 +159,8 @@ footer {
 .desktopText {
   display: none;
 }
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 48rem and up) */
+@media only screen and (min-width: 48rem) {
   .mobileText {
     display: none;
   }
@@ -213,16 +220,19 @@ footer {
       margin: 1.875rem 0rem 1.875rem 0rem;
     }
   }
+  .chart {
+    padding-bottom: 1.875rem;
+  }
   .back p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .back {
     @include flex-center;
-    width: 15rem;
+    width: 20rem;
     height: 3rem;
     background-color: $button;
     border-radius: 0.5rem;
-    margin: 10% 0rem 0.625rem 0rem;
+    margin: 0 0rem 0.625rem 0rem;
   }
   .about {
     margin-top: -15%;
@@ -239,9 +249,9 @@ footer {
     }
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 62rem and up) */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62rem) {
   :root {
     font-size: 2.2vh;
   }
@@ -313,18 +323,18 @@ footer {
     height: 2.8125rem;
     background-color: $button;
     border-radius: 0.5rem;
-    margin: 2rem 0rem 0.625rem 0rem;
+    margin: 0 0rem 0.625rem 0rem;
   }
   .about {
     margin-top: -8%;
     h1 {
-      margin: 0 250px 0 250px;
+      margin: 0 15.625rem 0 15.625rem;
       text-align: center;
       font-size: 5rem;
     }
     p {
-      width: 550px;
-      margin: 48px 400px 0 400px;
+      width: 34.375rem;
+      margin: 3rem 25rem 0 25rem;
       font-size: 1.5rem;
       font-weight: 200;
       text-align: left;

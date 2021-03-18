@@ -38,31 +38,31 @@ function Results({ check }) {
             </p>
           </div>
           <ChartResult result={result} />
-          <Link to="/">
-            <div class="back">
-              <p>Try Another Topic</p>
-            </div>
-          </Link>
           <Link
             to={{
               pathname: `/tweets`,
               state: { result },
             }}
           >
+            <div class="back tweetButton">
+              <p>Check the Tweets!</p>
+            </div>
+          </Link>
+          <Link to="/">
             <div class="back">
-              <p>Tweets</p>
+              <p>Try Another Topic</p>
             </div>
           </Link>
         </motion.div>
       ) : (
         <Loading />
       )}
-      <footer>
+      {/* <footer>
         <div class="name">
           <img src="./assets/github.svg" />
           <p>abdulrcs</p>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 }

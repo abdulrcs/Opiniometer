@@ -1,7 +1,23 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./styles/App.css";
 
 const Tweet = ({ text, polarity }) => {
+  const styles = {
+    color:
+      polarity === "Strongly Positive"
+        ? "forestgreen"
+        : polarity === "Positive"
+        ? "limegreen"
+        : polarity === "Weakly Positive"
+        ? "lightgreen"
+        : polarity === "Strongly Negative"
+        ? "indianred"
+        : polarity === "Negative"
+        ? "lightcoral"
+        : polarity === "Weakly Negative"
+        ? "lightpink"
+        : "#707072",
+  };
   return (
     <div class="tweetbox">
       <div class="tweetpic">
@@ -14,7 +30,7 @@ const Tweet = ({ text, polarity }) => {
         </div>
         <div class="tweetText">{text}</div>
         <div class="tweetScore">
-          <p>{polarity}</p>
+          <p style={styles}>{polarity}</p>
         </div>
       </div>
     </div>
@@ -31,6 +47,11 @@ export default function Tweets() {
           <Tweet text={tweet[0]} polarity={tweet[1]} />
         ))}
       </div>
+      <Link to="/">
+        <div class="back">
+          <p>Try Another Topic</p>
+        </div>
+      </Link>
     </>
   );
 }

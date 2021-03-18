@@ -1,9 +1,13 @@
 .parent {
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 .scrollable {
-  width: 48vw;
-  height: 500px;
+  width: 95vw;
+  height: 25rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 1.25rem;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -11,25 +15,31 @@
   display: none;
 }
 .tweetpic img {
-  width: 48px;
+  width: 3rem;
   height: auto;
   border-radius: 100%;
 }
 .tweetbox {
-  margin-top: 20px;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.625rem;
   font-family: "Open Sans";
   display: flex;
   background-color: #15202b;
-  width: 45vw;
+  width: 95vw;
   height: auto;
   color: white;
 }
 .tweetcontent {
-  width: 45vw;
+  width: 95vw;
   display: flex;
   flex-direction: column;
-  margin-left: 5px;
-  margin-right: 40px;
+  margin-left: 0.3125rem;
+  margin-right: 2.5rem;
+}
+.tweetText {
+  margin: initial;
 }
 .tweethead {
   margin: initial;
@@ -41,19 +51,172 @@
 .tweetname {
   margin: initial;
   font-weight: 700;
+  font-size: 1rem;
 }
 .tweetid {
   color: gray;
-  margin-left: 10px;
+  margin-left: 0.625rem;
+  font-size: 1rem;
 }
 .tweetpic {
-  margin: 10px;
+  margin: 0.625rem;
 }
 .tweetScore {
+  width: 100%;
+  margin-left: -5%;
   display: flex;
-  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.625rem;
   p {
+    font-weight: 600;
     text-align: center;
     font-family: "Open Sans";
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .parent {
+    flex-direction: column;
+  }
+  .scrollable {
+    width: 75vw;
+    height: 50rem;
+    margin-bottom: 0.625rem;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+  .tweetpic img {
+    width: 3rem;
+    height: auto;
+    border-radius: 100%;
+  }
+  .tweetbox {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    border-radius: 0.75rem;
+    margin-bottom: 0.9375rem;
+    font-family: "Open Sans";
+    display: flex;
+    background-color: #15202b;
+    width: 75vw;
+    height: auto;
+    color: white;
+  }
+  .tweetcontent {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.3125rem;
+    margin-right: 2.5rem;
+  }
+  .tweetText {
+    font-size: 1.25rem;
+    margin: initial;
+  }
+  .tweethead {
+    margin: initial;
+    display: flex;
+    p {
+      font-family: "Open Sans";
+    }
+  }
+  .tweetname {
+    margin: initial;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .tweetid {
+    color: gray;
+    margin-left: 0.625rem;
+    font-size: 1.25rem;
+  }
+  .tweetpic {
+    margin: 0.625rem;
+  }
+  .tweetScore {
+    width: 100%;
+    margin-left: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.625rem;
+    p {
+      font-weight: 600;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 1rem;
+    }
+  }
+}
+@media only screen and (min-width: 64.0625rem) {
+  .parent {
+    flex-direction: column;
+  }
+  .scrollable {
+    width: 48vw;
+    height: 23.75rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 1.25rem;
+  }
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+  .tweetpic img {
+    width: 3rem;
+    height: auto;
+    border-radius: 100%;
+  }
+  .tweetbox {
+    margin-bottom: 1.25rem;
+    font-family: "Open Sans";
+    display: flex;
+    background-color: #15202b;
+    width: 45vw;
+    height: auto;
+    color: white;
+  }
+  .tweetcontent {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.3125rem;
+    margin-right: 2.5rem;
+  }
+  .tweethead {
+    margin: initial;
+    display: flex;
+    p {
+      font-family: "Open Sans";
+    }
+  }
+  .tweetname {
+    margin: initial;
+    font-weight: 700;
+  }
+  .tweetText {
+    margin: initial;
+    font-size: 1rem;
+  }
+  .tweetid {
+    color: gray;
+    margin-left: 0.625rem;
+  }
+  .tweetpic {
+    margin: 0.625rem;
+  }
+  .tweetScore {
+    width: 100%;
+    margin-left: -5%;
+    display: flex;
+    padding-top: 0.625rem;
+    p {
+      text-align: center;
+      font-family: "Open Sans";
+    }
   }
 }

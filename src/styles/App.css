@@ -77,7 +77,7 @@ a {
 }
 
 .section1 .form input[type="text"] {
-  width: 12.5rem;
+  width: 10.5rem;
   height: 1.25rem;
   outline: none;
   border: 0rem;
@@ -164,7 +164,16 @@ footer .name {
   margin: 1.25rem 0rem 0.625rem 0rem;
 }
 
+.chart {
+  padding-bottom: 0.625rem;
+}
+
+.tweetButton {
+  background-color: #1da1f2 !important;
+}
+
 .back {
+  font-family: "Inter";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,11 +183,11 @@ footer .name {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 19.375rem;
-  height: 3.125rem;
+  width: 15.625rem;
+  height: 2.8125rem;
   background-color: #f48134;
   border-radius: 0.5rem;
-  margin: 8% 0rem 0.625rem 0rem;
+  margin: 0% 0rem 0.625rem 0rem;
 }
 
 .notenough {
@@ -204,8 +213,8 @@ footer .name {
   display: none;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 48rem and up) */
+@media only screen and (min-width: 48rem) {
   .mobileText {
     display: none;
   }
@@ -272,8 +281,11 @@ footer .name {
   .resultheader p {
     margin: 1.875rem 0rem 1.875rem 0rem;
   }
+  .chart {
+    padding-bottom: 1.875rem;
+  }
   .back p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .back {
     display: -webkit-box;
@@ -285,11 +297,11 @@ footer .name {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 15rem;
+    width: 20rem;
     height: 3rem;
     background-color: #f48134;
     border-radius: 0.5rem;
-    margin: 10% 0rem 0.625rem 0rem;
+    margin: 0 0rem 0.625rem 0rem;
   }
   .about {
     margin-top: -15%;
@@ -307,8 +319,8 @@ footer .name {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Large devices (laptops/desktops, 62rem and up) */
+@media only screen and (min-width: 62rem) {
   :root {
     font-size: 2.2vh;
   }
@@ -395,19 +407,19 @@ footer .name {
     height: 2.8125rem;
     background-color: #f48134;
     border-radius: 0.5rem;
-    margin: 2rem 0rem 0.625rem 0rem;
+    margin: 0 0rem 0.625rem 0rem;
   }
   .about {
     margin-top: -8%;
   }
   .about h1 {
-    margin: 0 250px 0 250px;
+    margin: 0 15.625rem 0 15.625rem;
     text-align: center;
     font-size: 5rem;
   }
   .about p {
-    width: 550px;
-    margin: 48px 400px 0 400px;
+    width: 34.375rem;
+    margin: 3rem 25rem 0 25rem;
     font-size: 1.5rem;
     font-weight: 200;
     text-align: left;
@@ -519,11 +531,15 @@ footer .name {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 
 .scrollable {
-  width: 48vw;
-  height: 500px;
+  width: 95vw;
+  height: 25rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 1.25rem;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -533,25 +549,28 @@ footer .name {
 }
 
 .tweetpic img {
-  width: 48px;
+  width: 3rem;
   height: auto;
   border-radius: 100%;
 }
 
 .tweetbox {
-  margin-top: 20px;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.625rem;
   font-family: "Open Sans";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #15202b;
-  width: 45vw;
+  width: 95vw;
   height: auto;
   color: white;
 }
 
 .tweetcontent {
-  width: 45vw;
+  width: 95vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,8 +578,12 @@ footer .name {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 5px;
-  margin-right: 40px;
+  margin-left: 0.3125rem;
+  margin-right: 2.5rem;
+}
+
+.tweetText {
+  margin: initial;
 }
 
 .tweethead {
@@ -577,26 +600,217 @@ footer .name {
 .tweetname {
   margin: initial;
   font-weight: 700;
+  font-size: 1rem;
 }
 
 .tweetid {
   color: gray;
-  margin-left: 10px;
+  margin-left: 0.625rem;
+  font-size: 1rem;
 }
 
 .tweetpic {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .tweetScore {
+  width: 100%;
+  margin-left: -5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.625rem;
 }
 
 .tweetScore p {
+  font-weight: 600;
   text-align: center;
   font-family: "Open Sans";
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  .parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .scrollable {
+    width: 75vw;
+    height: 50rem;
+    margin-bottom: 0.625rem;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+  .tweetpic img {
+    width: 3rem;
+    height: auto;
+    border-radius: 100%;
+  }
+  .tweetbox {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    border-radius: 0.75rem;
+    margin-bottom: 0.9375rem;
+    font-family: "Open Sans";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #15202b;
+    width: 75vw;
+    height: auto;
+    color: white;
+  }
+  .tweetcontent {
+    width: 95vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0.3125rem;
+    margin-right: 2.5rem;
+  }
+  .tweetText {
+    font-size: 1.25rem;
+    margin: initial;
+  }
+  .tweethead {
+    margin: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tweethead p {
+    font-family: "Open Sans";
+  }
+  .tweetname {
+    margin: initial;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  .tweetid {
+    color: gray;
+    margin-left: 0.625rem;
+    font-size: 1.25rem;
+  }
+  .tweetpic {
+    margin: 0.625rem;
+  }
+  .tweetScore {
+    width: 100%;
+    margin-left: -5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0.625rem;
+  }
+  .tweetScore p {
+    font-weight: 600;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 64.0625rem) {
+  .parent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .scrollable {
+    width: 48vw;
+    height: 23.75rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 1.25rem;
+  }
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+  .tweetpic img {
+    width: 3rem;
+    height: auto;
+    border-radius: 100%;
+  }
+  .tweetbox {
+    margin-bottom: 1.25rem;
+    font-family: "Open Sans";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #15202b;
+    width: 45vw;
+    height: auto;
+    color: white;
+  }
+  .tweetcontent {
+    width: 45vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0.3125rem;
+    margin-right: 2.5rem;
+  }
+  .tweethead {
+    margin: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tweethead p {
+    font-family: "Open Sans";
+  }
+  .tweetname {
+    margin: initial;
+    font-weight: 700;
+  }
+  .tweetText {
+    margin: initial;
+    font-size: 1rem;
+  }
+  .tweetid {
+    color: gray;
+    margin-left: 0.625rem;
+  }
+  .tweetpic {
+    margin: 0.625rem;
+  }
+  .tweetScore {
+    width: 100%;
+    margin-left: -5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0.625rem;
+  }
+  .tweetScore p {
+    text-align: center;
+    font-family: "Open Sans";
+  }
 }
 /*# sourceMappingURL=App.css.map */
