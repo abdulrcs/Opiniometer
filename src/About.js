@@ -28,7 +28,7 @@ function About() {
       <footer>
         <Link to="/">
           <div class="name">
-            <p class="detail">⬅️ Back</p>
+            <p class="detail">← Back</p>
           </div>
         </Link>
         <div class="name">
